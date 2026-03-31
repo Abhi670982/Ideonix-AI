@@ -1,8 +1,10 @@
+import Header from "./Components/Header";
 function App(){
   return(
     <div className="App">
-      <h1>Welcome to Ideonix AI</h1>
-      <p>Explore the power of artificial intelligence with us!</p>
+      <Header/>
+      <h1>Validate Your Startup Idea</h1>
+      <p>Get instant AI-powered market analysis, competition insights, and success probability</p>
     </div>  
   )
 }
