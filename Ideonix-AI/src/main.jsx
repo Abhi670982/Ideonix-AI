@@ -5,9 +5,11 @@ import { createRoot } from 'react-dom/client'
 // import Login from './Components/LoginForm.jsx'
 import Hero from './Components/Hero.jsx'
 import Header from './Components/Header.jsx'
+import Footer from './Components/Footer.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Header />
     <Hero />
+    <Footer/>
   </StrictMode>,
 )
