@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* Custom Scrollbar for better UI */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: theme('colors.card');
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@layer components {
+  /* No gradients allowed. Replaced with primary/secondary. */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-primary text-white font-semibold shadow-glow-primary transition-all duration-200 hover:-translate-y-0.5 hover:shadow-glow-primary-hover hover:opacity-90;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white/5 border border-white/10 text-foreground font-semibold transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/10;
+  }
+  
+  .card-container {
+    @apply bg-card border border-border rounded-2xl p-7 transition-all duration-300 hover:border-white/15 hover:-translate-y-1 hover:shadow-card-hover;
+  }
+}
