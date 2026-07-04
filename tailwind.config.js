@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/app/**/*.{js,ts,jsx,tsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/Components/**/*.{js,ts,jsx,tsx}",
+    "./src/contexts/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -17,7 +20,7 @@ export default {
         "border-active": "rgba(56, 189, 248, 0.5)",
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'], // Or Poppins as stated, using Inter for clean look
+        sans: ['Inter', 'sans-serif'],
       },
       boxShadow: {
         'glow-primary': '0 4px 24px rgba(56, 189, 248, 0.25)',
